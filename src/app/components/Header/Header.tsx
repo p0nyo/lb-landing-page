@@ -23,15 +23,20 @@ export default function Header() {
                         <li><HeaderButton text="Log In" textColor='text-black' bgColor='bg-white'/></li>
                         <li><HeaderButton text="Join Now" /></li>
                     </ul>
+                    <div className="sm:hidden">
+                        <Image 
+                            src="/header-menu-toggle.png"
+                            alt="Menu Toggle for Mobile Screens"
+                            width={40}
+                            height={40}
+                        />
+                    </div>
                 </div>
 
 
 
 
                 {/* Mobile menu button */}
-                <div className="sm:hidden">
-                {/* Insert hamburger menu icon here */}
-                </div>
             </div>
         </nav>
     );
