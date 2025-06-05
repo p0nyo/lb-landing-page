@@ -12,7 +12,7 @@ export default function Footer() {
 
         {/* NavBar */}
         <div className="flex-1 flex justify-center">
-          <FooterNavBar />
+          <FooterNavBar items={["About", "FAQ", "Terms"]}/>
         </div>
 
         {/* Social Icons */}

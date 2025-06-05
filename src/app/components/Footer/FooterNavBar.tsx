@@ -1,16 +1,16 @@
-export default function FooterNavBar() {
+type FooterNavBarProps = {
+  items: string[];
+};
+
+export default function FooterNavBar({ items }: FooterNavBarProps) {
   return (
     <nav>
       <ul className="flex gap-x-8 font-semibold text-sm">
-        <li>
-          <span>About</span>
-        </li>
-        <li>
-          <span>FAQ</span>
-        </li>
-        <li>
-          <span>Terms</span>
-        </li>
+        {items.map((item, index) => (
+          <li key={index}>
+            <span>{item}</span>
+          </li>
+        ))}
       </ul>
     </nav>
   );
