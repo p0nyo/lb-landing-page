@@ -12,7 +12,7 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   variable: "--font-poppins",
-})
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={clsx(poppins.className)}>
-        {/* <Header /> */}
-        {children}
+    <html lang="en" className="min-h-screen">
+      <body className={clsx("flex flex-col min-h-screen", poppins.className)}>
+        <Header />
+
+        <main className="flex-grow">{children}</main>
+
         <Footer />
       </body>
     </html>
