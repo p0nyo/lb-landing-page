@@ -1,9 +1,10 @@
 import FooterLogo from "./FooterLogo";
+import FooterNavBar from "./FooterNavBar";
 
 export default function Footer() {
   return (
     <footer className="w-full bg-white py-6">
-      <div className="mx-auto px-4 flex">
+      <div className="mx-auto px-4 flex items-center">
         {/* Logo */}
         <div className="flex-1 flex justify-start">
           <FooterLogo />
@@ -11,7 +12,7 @@ export default function Footer() {
 
         {/* NavBar */}
         <div className="flex-1 flex justify-center">
-          <p>Middle content</p>
+          <FooterNavBar />
         </div>
 
         {/* Social Icons */}
