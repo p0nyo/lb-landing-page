@@ -20,7 +20,7 @@ export default function Header() {
 
                     {/* Navigation Links on the right */}
                     <ul className="hidden sm:flex gap-x-4">
-                        <li><HeaderButton text="Log In" textColor='text-black' bgColor='bg-white'/></li>
+                        <li><HeaderButton text="Log In" textColor='text-lb-red' bgColor='bg-white'/></li>
                         <li><HeaderButton text="Join Now" /></li>
                     </ul>
                     <div className="sm:hidden">
