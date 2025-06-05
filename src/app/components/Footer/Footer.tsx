@@ -1,5 +1,6 @@
 import FooterLogo from "./FooterLogo";
 import FooterNavBar from "./FooterNavBar";
+import SocialIcons from "./SocialIcons";
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex-1 flex justify-end">
-          <p>Right content</p>
+          <SocialIcons images={["/facebook.png", "/instagram.png", "/linkedin.png"]}/>
         </div>
       </div>
     </footer>
