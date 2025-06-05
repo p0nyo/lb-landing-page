@@ -9,7 +9,9 @@ export default function FooterLogo() {
         width={155}
         height={40}
       />
-      <span style={{ fontSize: "0.8em" }}>© Local Bestie Limited 2025</span>
+      <span className="font-semibold" style={{ fontSize: "0.8em" }}>
+        © Local Bestie Limited 2025
+      </span>
     </div>
   );
 }
