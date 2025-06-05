@@ -4,6 +4,7 @@ import clsx from "clsx";
 import "@/app/globals.css";
 
 import { Header } from "@/app/components/Header";
+import { Footer } from "@/app/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(poppins.className)}>
-        <Header />
+        {/* <Header /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
