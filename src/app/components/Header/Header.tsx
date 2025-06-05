@@ -5,8 +5,8 @@ import HeaderButton from "./HeaderButton";
 export default function Header() {
   return (
     <nav className="w-full bg-white fixed top-0 left-0 right-0 z-50">
-      <div className="max-w-[1920px] mx-auto px-2 md:px-20 h-18 flex items-center justify-between">
-        <div className="flex items-center justify-between w-full px-4">
+      <div className="max-w-[1920px] mx-auto px-6 md:px-20 h-18 flex items-center justify-between">
+        <div className="flex items-center justify-between w-full">
           {/* Logo on the left */}
           <div className="flex-shrink-0 w-[100px] md:w-[155px]">
             <Image
