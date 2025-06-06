@@ -1,22 +1,22 @@
-import KeyFeaturesItem from "./FeaturesItem";
+import FeaturesItem from "./FeaturesItem";
 
-type KeyFeaturesItem = {
+type FeaturesItemProps = {
   title: string;
   description: string;
   children: React.ReactNode;
 };
 
-type KeyFeaturesItemListProps = {
-  items: KeyFeaturesItem[];
+type FeaturesItemListProps = {
+  items: FeaturesItemProps[];
 };
 
-export default function KeyFeaturesItemList({
+export default function FeaturesItemList({
   items,
-}: KeyFeaturesItemListProps) {
+}: FeaturesItemListProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {items.map((item, index) => (
-        <KeyFeaturesItem
+        <FeaturesItem
           key={index}
           title={item.title}
           description={item.description}

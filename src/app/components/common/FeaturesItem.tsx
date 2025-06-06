@@ -1,19 +1,19 @@
-type KeyFeaturesItemProps = {
+type FeaturesItemProps = {
   title: string;
   description: string;
   children: React.ReactNode;
 };
 
-export default function KeyFeaturesItem({
+export default function FeaturesItem({
   title,
   description,
   children,
-}: KeyFeaturesItemProps) {
+}: FeaturesItemProps) {
   return (
     <div className="text-center">
-      <div className="mb-4">{children}</div>
+      <div className="flex mb-4 justify-center items-center">{children}</div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="font-light">{description}</p>
+      <p className="font-light text-xs">{description}</p>
     </div>
   );
 }

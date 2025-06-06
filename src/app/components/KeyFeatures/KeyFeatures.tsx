@@ -1,5 +1,4 @@
-import { Bounded } from "@/app/components/common";
-import KeyFeaturesItemList from "../common/FeaturesItemList";
+import { Bounded, FeaturesItemList } from "@/app/components/common";
 import Image from "next/image";
 
 const features = [
@@ -49,12 +48,12 @@ export default function KeyFeatures() {
     <div className="bg-white flex items-center">
       <Bounded>
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-semibold">Why Local Bestie works</h2>
+          <h2 className="text-3xl font-semibold mb-2">Why Local Bestie works</h2>
           <p className="text-lg text-lb-red">
             Built for local businesses like yours
           </p>
         </div>
-        <KeyFeaturesItemList items={features} />
+        <FeaturesItemList items={features} />
       </Bounded>
     </div>
   );
