@@ -2,6 +2,7 @@ import { Hero } from "@/app/components/Hero";
 import { KeyFeatures } from "@/app/components/KeyFeatures";
 import { HowItWorks } from "@/app/components/HowItWorks";
 import { MoreFeatures } from "@/app/components/MoreFeatures";
+import { DownloadCTA } from "@/app/components/DownloadCTA";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <KeyFeatures />
       <HowItWorks />
       <MoreFeatures />
+      <DownloadCTA />
     </>
   );
 }
