@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import HeaderButton from "./HeaderButton";
+import { CommonButton }from "@/app/components/common";
 
 export default function Header() {
   return (
@@ -20,14 +20,14 @@ export default function Header() {
           {/* Navigation Links on the right */}
           <ul className="hidden md:flex gap-x-4">
             <li>
-              <HeaderButton
+              <CommonButton
                 text="Log In"
                 textColor="text-lb-red"
                 bgColor="bg-white"
               />
             </li>
             <li>
-              <HeaderButton text="Join Now" />
+              <CommonButton text="Join Now" />
             </li>
           </ul>
           {/* Hamburger menu botton for Mobile screens */}

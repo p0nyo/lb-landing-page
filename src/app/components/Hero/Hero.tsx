@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Bounded from "@/app/components/Bounded";
+import { Bounded }from "@/app/components/common";
 
 export default function Hero() {
   return (
