@@ -9,6 +9,7 @@ export { default as HamburgerMenuIcon } from "./icons/HamburgerMenuIcon";
 export { default as MoreFeatureIcons } from "./icons/MoreFeatureIcons";
 export { default as AppleStoreIcon } from "./icons/AppleStoreIcon";
 export { default as GoogleStoreIcon } from "./icons/GoogleStoreIcon";
+export { default as SocialIcons } from "./icons/SocialIcons";
 
 export { default as HeroImage } from "./images/HeroImage";
 export { default as KeyFeaturesImages } from "./images/KeyFeaturesImages";
