@@ -1,24 +1,19 @@
-import Image from "next/image";
-import React from "react";
-
 type KeyFeaturesItemProps = {
-  imageSrc: string;
   title: string;
   description: string;
+  children: React.ReactNode;
 };
 
-export default function KeyFeaturesItem({ imageSrc, title, description }: KeyFeaturesItemProps) {
+export default function KeyFeaturesItem({
+  title,
+  description,
+  children,
+}: KeyFeaturesItemProps) {
   return (
     <div className="text-center">
-      <Image
-        src={imageSrc}
-        alt={title}
-        width={400}
-        height={80}
-        className="mb-4"
-      />
+      <div className="mb-4">{children}</div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="font-light">{description}</p>
     </div>
   );
-};
+}

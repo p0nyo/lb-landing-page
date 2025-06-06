@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Bounded } from "@/app/components/common";
 import KeyFeaturesItem from "./KeyFeaturesItem";
 
@@ -11,19 +13,43 @@ export default function KeyFeatures() {
             Built for local businesses like yours
           </p>
         </div>
-        <div className="max-w-7xl mx-auto grid gap-y-8 md:grid-cols-3">
+        <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-3">
           <KeyFeaturesItem
-            imageSrc="/key-features-1.png"
+            children={
+                <Image
+                    src="/key-features-1.png"
+                    alt="Smart visibility"
+                    width={400}
+                    height={80}
+                    className="mb-4"
+                />
+            }
             title="Smart visibility"
             description="Get discovered by local customers actively looking for services like yours."
           />
           <KeyFeaturesItem
-            imageSrc="/key-features-2.png"
+            children={
+                <Image
+                    src="/key-features-2.png"
+                    alt="Dynamic offers"
+                    width={400}
+                    height={80}
+                    className="mb-4"
+                />
+            }
             title="Dynamic offers"
             description="Use AI-powered pricing to attract customers during slow hours."
           />
           <KeyFeaturesItem
-            imageSrc="/key-features-3.png"
+            children={
+                <Image
+                    src="/key-features-3.png"
+                    alt="Cashback loyalty"
+                    width={400}
+                    height={80}
+                    className="mb-4"
+                />
+            }
             title="Cashback loyalty"
             description="Keep them coming back with our points-based cashback rewards system."
           />
