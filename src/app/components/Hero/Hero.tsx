@@ -3,7 +3,7 @@ import { Bounded, CommonButton } from "@/app/components/common";
 
 export default function Hero() {
   return (
-    <div className="bg-lb-red flex items-center">
+    <div className="bg-lb-red flex items-center pt-8">
       <Bounded className="grid md:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center items-start text-white">
           <h1 className="text-2xl md:text-4xl font-semibold mb-4">
