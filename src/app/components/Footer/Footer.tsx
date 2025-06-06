@@ -1,6 +1,6 @@
 import FooterLogo from "./FooterLogo";
 import FooterNavBar from "./FooterNavBar";
-import SocialIcons from "./SocialIcons";
+import { SocialIcons } from "@/app/components/common/";
 
 export default function Footer() {
   return (

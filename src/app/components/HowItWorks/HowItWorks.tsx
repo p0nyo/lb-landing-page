@@ -1,5 +1,8 @@
-import { Bounded, FeaturesItemList } from "@/app/components/common";
-import Image from "next/image";
+import {
+  Bounded,
+  FeaturesItemList,
+  HowItWorksImages,
+} from "@/app/components/common";
 
 const features = [
   {
@@ -8,12 +11,9 @@ const features = [
       "User enters the amount in LB app. You both get a unique verification code.",
     children: (
       <div className="flex flex-col justify-center items-center">
-        <Image
-          src="/how-it-works-icon-1.png"
-          alt="Customer pays in app"
-          width={80}
-          height={80}
-          className="mb-4"
+        <HowItWorksImages
+          imageSrc="/how-it-works-icon-1.png"
+          altText="Customer pays in app"
         />
         <span className="text-sm font-semibold text-lb-red">Step 1</span>
       </div>
@@ -25,12 +25,9 @@ const features = [
       "Cash back points go to the customer account - no need to track or print anything.",
     children: (
       <div className="flex flex-col justify-center items-center">
-        <Image
-          src="/how-it-works-icon-2.png"
-          alt="Auto cashback issued"
-          width={80}
-          height={80}
-          className="mb-4"
+        <HowItWorksImages
+          imageSrc="/how-it-works-icon-2.png"
+          altText="Auto cashback issued"
         />
         <span className="text-sm font-semibold text-lb-red">Step 2</span>
       </div>
@@ -42,12 +39,9 @@ const features = [
       "Funds are securely transferred to your account. Easy accounting.",
     children: (
       <div className="flex flex-col justify-center items-center">
-        <Image
-          src="/how-it-works-icon-3.png"
-          alt="You get paid fast"
-          width={80}
-          height={80}
-          className="mb-4"
+        <HowItWorksImages
+          imageSrc="/how-it-works-icon-3.png"
+          altText="You get paid fast"
         />
         <span className="text-sm font-semibold text-lb-red">Step 3</span>
       </div>
