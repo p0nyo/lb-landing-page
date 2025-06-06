@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Bounded, CommonButton } from "@/app/components/common";
+import { Bounded, CommonButton, HeroImage } from "@/app/components/common";
 
 export default function Hero() {
   return (
@@ -30,13 +29,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative w-full h-64 md:h-[500px] flex-1">
-          <Image
-            src="/hero-image.png"
-            alt="Hero Image"
-            fill
-            priority
-            className="rounded-xl object-cover"
-          />
+          <HeroImage />
         </div>
       </Bounded>
     </div>

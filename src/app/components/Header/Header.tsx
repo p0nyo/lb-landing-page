@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { CommonButton, LBLogo, HamburgerMenuIcon } from "@/app/components/common";
 
 export default function Header() {
