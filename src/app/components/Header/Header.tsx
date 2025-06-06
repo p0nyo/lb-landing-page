@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { CommonButton } from "@/app/components/common";
+import { CommonButton, LBLogo, HamburgerMenuIcon } from "@/app/components/common";
 
 export default function Header() {
   return (
@@ -9,13 +9,7 @@ export default function Header() {
         <div className="flex items-center justify-between w-full">
           {/* Logo on the left */}
           <div className="flex-shrink-0 w-[100px] md:w-[155px]">
-            <Image
-              src="/header-logo.png"
-              alt="Local Bestie Header Logo"
-              width={155}
-              height={40}
-              style={{ width: "100%", height: "auto" }}
-            />
+            <LBLogo />
           </div>
           {/* Navigation Links on the right */}
           <ul className="hidden md:flex gap-x-4">
@@ -31,14 +25,9 @@ export default function Header() {
               <CommonButton text="Join Now" className="py-2 px-6" />
             </li>
           </ul>
-          {/* Hamburger menu botton for Mobile screens */}
+          {/* Hamburger menu button for Mobile screens */}
           <div className="md:hidden">
-            <Image
-              src="/header-menu-toggle.png"
-              alt="Menu Toggle for Mobile Screens"
-              width={40}
-              height={40}
-            />
+            <HamburgerMenuIcon />
           </div>
         </div>
       </div>
