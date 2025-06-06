@@ -8,3 +8,4 @@ export { default as LBLogo } from "./icons/LBLogo";
 export { default as HamburgerMenuIcon } from "./icons/HamburgerMenuIcon";
 
 export { default as HeroImage } from "./images/HeroImage";
+export { default as KeyFeaturesImages } from "./images/KeyFeaturesImages";
