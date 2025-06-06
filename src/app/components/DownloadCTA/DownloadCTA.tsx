@@ -1,4 +1,8 @@
-import { Bounded, AppleStoreIcon, GoogleStoreIcon } from "@/app/components/common";
+import {
+  Bounded,
+  AppleStoreIcon,
+  GoogleStoreIcon,
+} from "@/app/components/common";
 
 export default function DownloadCTA() {
   return (
@@ -9,9 +13,23 @@ export default function DownloadCTA() {
           <p className="text-lg font-light mb-6">
             Download the App to connect with customers today!
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
-            <AppleStoreIcon />
-            <GoogleStoreIcon />
+          <div className="flex flex-col md:flex-row justify-center items-center gap-x-4">
+            <a
+              href="https://example.com/lb-partner-app-download"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition transform hover:scale-110 active:scale-50 duration-300"
+            >
+              <AppleStoreIcon />
+            </a>
+            <a
+              href="https://example.com/lb-partner-app-download"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition transform hover:scale-110 active:scale-50 duration-300"
+            >
+              <GoogleStoreIcon />
+            </a>
           </div>
         </div>
       </Bounded>
