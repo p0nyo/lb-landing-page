@@ -9,3 +9,4 @@ export { default as HamburgerMenuIcon } from "./icons/HamburgerMenuIcon";
 
 export { default as HeroImage } from "./images/HeroImage";
 export { default as KeyFeaturesImages } from "./images/KeyFeaturesImages";
+export { default as HowItWorksImages } from "./images/HowItWorksImages";
