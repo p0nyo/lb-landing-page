@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { MoreFeatureIcons } from "@/app/components/common";
 
 type Feature = {
   title: string;
@@ -19,11 +19,9 @@ export default function MoreFeaturesItemList({
           key={index}
           className="flex flex-row md:flex-col items-center md:items-start gap-4"
         >
-          <Image
-            src={feature.icon}
-            alt={feature.title}
-            width={25}
-            height={25}
+          <MoreFeatureIcons
+            imageSrc={feature.icon}
+            altText={feature.title}
           />
           <div className="flex flex-col text-start">
             <h3 className="text-xl font-medium">{feature.title}</h3>
