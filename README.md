@@ -30,10 +30,12 @@ npm run dev
 
 ### Desktop (768px and above)
 
-https://github.com/user-attachments/assets/c1e8c4e6-9c14-4427-9d92-bda96b4330ef
+https://github.com/user-attachments/assets/8cde4632-c295-4d37-9234-bd25009c32cf
 
 ### Mobile (378px and below)
 
-https://github.com/user-attachments/assets/f5f467c5-6f99-4eff-9855-62f5d40e7f2d
+https://github.com/user-attachments/assets/33b6eaa5-4481-4e84-9dbe-57b890911bb0
+
+
 
 
