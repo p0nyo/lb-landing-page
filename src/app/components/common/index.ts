@@ -7,6 +7,8 @@ export { default as TickIcon } from "./icons/TickIcon";
 export { default as LBLogo } from "./icons/LBLogo";
 export { default as HamburgerMenuIcon } from "./icons/HamburgerMenuIcon";
 export { default as MoreFeatureIcons } from "./icons/MoreFeatureIcons";
+export { default as AppleStoreIcon } from "./icons/AppleStoreIcon";
+export { default as GoogleStoreIcon } from "./icons/GoogleStoreIcon";
 
 export { default as HeroImage } from "./images/HeroImage";
 export { default as KeyFeaturesImages } from "./images/KeyFeaturesImages";

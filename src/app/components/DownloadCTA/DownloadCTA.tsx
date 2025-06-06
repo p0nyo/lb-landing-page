@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-import { Bounded } from "@/app/components/common";
+import { Bounded, AppleStoreIcon, GoogleStoreIcon } from "@/app/components/common";
 
 export default function DownloadCTA() {
   return (
@@ -12,20 +10,8 @@ export default function DownloadCTA() {
             Download the App to connect with customers today!
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
-            <Image
-              src="/apple-store-button.png"
-              alt="Download on the App Store"
-              width={150}
-              height={50}
-              className="inline-block mt-4"
-            />
-            <Image
-              src="/google-store-button.png"
-              alt="Get it on Google Play"
-              width={150}
-              height={50}
-              className="inline-block mt-4"
-            />
+            <AppleStoreIcon />
+            <GoogleStoreIcon />
           </div>
         </div>
       </Bounded>
