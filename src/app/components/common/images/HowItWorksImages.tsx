@@ -1,11 +1,14 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 type HowItWorksImagesProps = {
-    imageSrc: string;
-    altText: string;
-}
+  imageSrc: string;
+  altText: string;
+};
 
-export default function HowItWorksImages({ imageSrc, altText }: HowItWorksImagesProps) {
+export default function HowItWorksImages({
+  imageSrc,
+  altText,
+}: HowItWorksImagesProps) {
   return (
     <Image
       src={imageSrc}

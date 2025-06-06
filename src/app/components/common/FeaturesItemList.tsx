@@ -10,9 +10,7 @@ type FeaturesItemListProps = {
   items: FeaturesItemProps[];
 };
 
-export default function FeaturesItemList({
-  items,
-}: FeaturesItemListProps) {
+export default function FeaturesItemList({ items }: FeaturesItemListProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {items.map((item, index) => (

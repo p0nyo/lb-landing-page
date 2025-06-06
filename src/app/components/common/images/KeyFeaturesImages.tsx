@@ -1,11 +1,14 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 type KeyFeaturesImagesProps = {
-    imageSrc: string;
-    altText: string;
-}
+  imageSrc: string;
+  altText: string;
+};
 
-export default function KeyFeaturesImages({ imageSrc, altText }: KeyFeaturesImagesProps) {
+export default function KeyFeaturesImages({
+  imageSrc,
+  altText,
+}: KeyFeaturesImagesProps) {
   return (
     <Image
       src={imageSrc}

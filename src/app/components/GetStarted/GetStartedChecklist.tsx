@@ -4,7 +4,9 @@ type GetStartedChecklistProps = {
   checklistItems: string[];
 };
 
-export default function GetStartedChecklist({ checklistItems }: GetStartedChecklistProps) {
+export default function GetStartedChecklist({
+  checklistItems,
+}: GetStartedChecklistProps) {
   return (
     <div className="flex-1 bg-lb-grey px-10 py-12 rounded-lg">
       <ul className="space-y-4 text-lb-red">

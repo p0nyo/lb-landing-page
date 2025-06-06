@@ -1,4 +1,8 @@
-import { CommonButton, LBLogo, HamburgerMenuIcon } from "@/app/components/common";
+import {
+  CommonButton,
+  LBLogo,
+  HamburgerMenuIcon,
+} from "@/app/components/common";
 
 export default function Header() {
   return (
