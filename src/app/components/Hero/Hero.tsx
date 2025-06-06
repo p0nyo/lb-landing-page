@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Bounded }from "@/app/components/common";
+import { Bounded, CommonButton } from "@/app/components/common";
 
 export default function Hero() {
   return (
     <Bounded className="bg-lb-red flex items-center">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center text-white">
-          <h1 className="text-2xl md:text-5xl font-semibold mb-4">
+          <h1 className="text-2xl md:text-4xl font-semibold mb-4">
             More customers. <br />
             Smarter promotions. <br />
             Zero hassle.
@@ -16,23 +16,26 @@ export default function Hero() {
             your quiet hours, builds loyalty, and turns one-time visitors into
             regulars.
           </p>
-          <div className="flex gap-x-4">
-            <button className="bg-white text-lb-red font-semibold py-2 px-4 rounded">
-              Join for Free
-            </button>
-            <button className="flex items-center text-white font-semibold py-2 px-4">
-              <span>🎥</span>
-              <span className="ml-2">View Demo</span>
-            </button>
+          <div className="flex items-center justify-center md:justify-start gap-x-4 md:gap-x-6">
+            <CommonButton
+              text="Join for Free"
+              bgColor="bg-white"
+              textColor="text-lb-red"
+              className="px-4 py-4 md:px-10 md:py-2"
+            />
+            <CommonButton
+              text="View Demo"
+              className="px-4 py-4 md:px-10 md:py-2"
+            />
           </div>
         </div>
-        <div>
+        <div className="relative w-full h-64 md:h-[500px] flex-1">
           <Image
             src="/hero-image.png"
-            alt="Description of Image"
-            width={500}
-            height={500}
-            className="rounded-xl"
+            alt="Hero Image"
+            fill
+            priority
+            className="rounded-xl object-cover"
           />
         </div>
       </div>

@@ -24,10 +24,11 @@ export default function Header() {
                 text="Log In"
                 textColor="text-lb-red"
                 bgColor="bg-white"
+                className="py-2 px-6"
               />
             </li>
             <li>
-              <CommonButton text="Join Now" />
+              <CommonButton text="Join Now" className="py-2 px-6" />
             </li>
           </ul>
           {/* Hamburger menu botton for Mobile screens */}
