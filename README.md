@@ -20,6 +20,11 @@ To run the development server:
 ```
 npm run dev
 ```
+Then navigate to the page locally hosted webpage:
+```
+http://localhost:3000
+```
+
 ## Notes
 
 - Design decisions made, limited the total horizontal width of the page to `1280px` in order to stop the page from expanding on very large screen sizes.
