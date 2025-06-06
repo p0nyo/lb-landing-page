@@ -11,7 +11,7 @@ export default function DownloadCTA() {
           <p className="text-lg font-light mb-6">
             Download the App to connect with customers today!
           </p>
-          <div className="flex justify-center gap-x-2">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-x-2">
             <Image
               src="/apple-store-button.png"
               alt="Download on the App Store"
