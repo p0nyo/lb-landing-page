@@ -3,9 +3,9 @@ import { Bounded, CommonButton } from "@/app/components/common";
 
 export default function Hero() {
   return (
-    <Bounded className="bg-lb-red flex items-center">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-        <div className="flex flex-col justify-center text-white">
+    <div className="bg-lb-red flex items-center pt-8">
+      <Bounded className="grid md:grid-cols-2 gap-8">
+        <div className="flex flex-col justify-center items-start text-white">
           <h1 className="text-2xl md:text-4xl font-semibold mb-4">
             More customers. <br />
             Smarter promotions. <br />
@@ -38,7 +38,7 @@ export default function Hero() {
             className="rounded-xl object-cover"
           />
         </div>
-      </div>
-    </Bounded>
+      </Bounded>
+    </div>
   );
 }
